@@ -1,0 +1,156 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  background-color: #333;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.btn {
+  display: inline-block;
+  background: none;
+  border: none;
+  padding: 1rem;
+  font-size: 2rem;
+  outline: none;
+}
+
+.btn--lg {
+  transform: scale(2);
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+h1,h2,h3,h4,p{
+  margin: 1rem;
+}
+
+#root {
+  max-width: 700px;
+  margin: auto;
+  height: 100%;
+  padding: 2rem;
+}
+
+.mobile-layout {
+  height: 100%;
+border-radius: 40px;
+  background-color: #e4e4e4;
+  padding: 4rem 1rem;
+  box-shadow: 0px 1px 12px 13px rgb(82 79 79 / 20%);
+}
+
+.screen {
+  border: 1px solid rgb(0, 0, 0);
+  height: inherit;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0.5rem;
+  box-shadow: 0px 0.5px 0px 2px rgb(0 0 0 / 10%);
+}
+
+#filePicker{
+  display: none;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.2rem;
+  flex: 1;
+}
+
+.progress {
+  display: flex;
+  flex-direction: column;
+}
+
+.progress-bar-wrap {
+  width: 100%;
+  height: 10px;
+  background: #000;
+  border-radius: 4px;
+}
+
+.progress-bar {
+  width: 4%;
+  height: inherit;
+  background: orange;
+  border-radius: inherit;
+  position: relative;
+}
+
+.progress-bar::after {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: -1px;
+  right: -4px;
+  background: red;
+}
+
+.progress-time-wrap {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+
+.player-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}

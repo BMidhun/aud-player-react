@@ -2,3 +2,8 @@
 declare module "react/jsx-runtime" {
   export default any;
 }
+
+declare module '*.png' {
+  const src: string;
+  export default src;
+}

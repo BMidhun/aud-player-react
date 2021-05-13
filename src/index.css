@@ -7,6 +7,19 @@
   box-sizing: inherit;
 }
 
+:root{
+  --text-color : #fff;
+  --iconColor : #fff;
+  --btnColor : #fff; 
+  --layoutColor : #111;
+  --btnActiveColor : #da6f2f;
+  --btnDisabled : #aaa;
+  --bgColor : #0b174e;
+  --screenColor : #04145e;
+
+  --shadowColor : rgba(20, 134, 172, 0.26);
+}
+
 html {
   font-size: 62.5%;
   height: 100%;
@@ -15,12 +28,13 @@ html {
 
 body {
   height: 100%;
-  background-color: #333;
+  background-color:var(--bgColor);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color:var(--text-color);
 }
 
 code {
@@ -35,34 +49,55 @@ code {
   padding: 1rem;
   font-size: 2rem;
   outline: none;
+  color:var(--btnColor)
+}
+
+.btn-active{
+   color: var(--btnActiveColor)
+}
+
+.btn:disabled{
+   color: var(--btnDisabled);
 }
 
 .btn--lg {
-  transform: scale(2);
+  transform: scale(2.5);
+}
+
+.btn-play{
+  color: var(--btnActiveColor)
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 2.3rem;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 h4 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
-h1,h2,h3,h4,p{
+h1,
+h2,
+h3,
+h4,
+p {
   margin: 1rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 #root {
@@ -74,31 +109,29 @@ h1,h2,h3,h4,p{
 
 .mobile-layout {
   height: 100%;
-border-radius: 40px;
-  background-color: #e4e4e4;
+  border-radius: 40px;
+  background-color:var(--layoutColor);
   padding: 4rem 1rem;
-  box-shadow: 0px 1px 12px 13px rgb(82 79 79 / 20%);
+  box-shadow: 0px 1px 10px 5px rgb(29 32 33 / 26%);
 }
 
 .screen {
-  border: 1px solid rgb(0, 0, 0);
+  background-color: var(--screenColor);
   height: inherit;
   position: relative;
   display: flex;
   flex-direction: column;
 }
 
-
-
 .menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem 0.5rem;
-  box-shadow: 0px 0.5px 0px 2px rgb(0 0 0 / 10%);
+  border-bottom: 1px solid #1d1d7e;
 }
 
-#filePicker{
+#filePicker {
   display: none;
 }
 
@@ -107,6 +140,7 @@ border-radius: 40px;
   flex-direction: column;
   padding: 1rem 1.2rem;
   flex: 1;
+  justify-content: space-around;
 }
 
 .progress {
@@ -122,14 +156,14 @@ border-radius: 40px;
 }
 
 .progress-bar {
-  width: 4%;
+  width: 0%;
   height: inherit;
   background: orange;
   border-radius: inherit;
   position: relative;
 }
 
-.progress-bar::after {
+/* .progress-bar::after {
   content: "";
   display: inline-block;
   width: 12px;
@@ -139,7 +173,7 @@ border-radius: 40px;
   top: -1px;
   right: -4px;
   background: red;
-}
+} */
 
 .progress-time-wrap {
   padding: 1rem;
@@ -153,4 +187,117 @@ border-radius: 40px;
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+.track-image-wrap {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.track-image-wrap img {
+  max-width: 100%;
+  box-shadow: 0px 1px 10px 5px rgb(29 32 33 / 26%);
+
+  /* border-radius: 50%; */
+}
+
+.playlist {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color:var(--screenColor);
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  color:var(--text-color);
+}
+
+
+.playlist-hide{
+  width: 0%;
+  display: none;
+  animation-duration: 0.2s;
+  animation-name: hide;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+}
+
+.playlist-show {
+  width: 100%;
+  display: flex;
+  animation-duration: 0.4s;
+  animation-name: expand;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+} 
+
+
+@keyframes expand {
+    0%{
+      opacity: 0;
+      width: 0%;
+      display: block;
+    }
+
+    50%{
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+      width: 100%;
+      display: flex;
+    }
+}
+
+
+@keyframes hide {
+  0%{
+    width: 100%;
+  }
+
+  100% {
+    width: 0%;
+  }
+}
+
+.tracklist {
+  /* height: 100%; */
+  overflow-y: auto;
+}
+
+
+.tracklist, .no-tracks{
+  flex:1;
+}
+
+.no-tracks{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.playlist-track-wrap{
+  display: flex;
+  align-items: center;
+  padding: 0.3rem 0.4rem;
+  box-shadow: 0px 0.5px 0px 2px var(--shadowColor);
+
+}
+
+.playlist-image-wrap{
+  max-width: 90px;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+}
+
+.playlist-image-wrap img {
+  max-width: 100%;
+  
+}
+
+.playlist-track-detail{
+  margin-right: auto;
 }

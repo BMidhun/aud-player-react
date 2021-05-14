@@ -1,0 +1,60 @@
+[debug] [2021-05-14T08:43:42.773Z] ----------------------------------------------------------------------
+[debug] [2021-05-14T08:43:42.775Z] Command:       /home/qbuser/.nvm/versions/node/v14.16.0/bin/node /home/qbuser/.nvm/versions/node/v14.16.0/bin/firebase init
+[debug] [2021-05-14T08:43:42.775Z] CLI Version:   9.10.2
+[debug] [2021-05-14T08:43:42.775Z] Platform:      linux
+[debug] [2021-05-14T08:43:42.776Z] Node Version:  v14.16.0
+[debug] [2021-05-14T08:43:42.776Z] Time:          Fri May 14 2021 14:13:42 GMT+0530 (India Standard Time)
+[debug] [2021-05-14T08:43:42.776Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-05-14T08:43:42.781Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-05-14T08:43:42.781Z] > authorizing via signed-in user (midhunthetrapper@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/qbuser/midhun/React/react-music-player
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-05-14T08:43:52.818Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2021-05-14T08:43:53.442Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2021-05-14T08:43:53.443Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project audplayer-58b42 (audplayer) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2021-05-14T08:44:12.108Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2021-05-14T08:44:12.223Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2021-05-14T08:44:12.223Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"8.6.1","browserURL":"https://www.gstatic.com/firebasejs/8.6.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/8.6.1/firebase.tgz"},"live":{"version":"8.6","browserURL":"https://www.gstatic.com/firebasejs/live/8.6/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/8.6/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/8.6.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js","database":"https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js","firestore":"https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js","functions":"https://www.gstatic.com/firebasejs/8.6.1/firebase-functions.js","installations":"https://www.gstatic.com/firebasejs/8.6.1/firebase-installations.js","messaging":"https://www.gstatic.com/firebasejs/8.6.1/firebase-messaging.js","storage":"https://www.gstatic.com/firebasejs/8.6.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/8.6.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/8.6.1/firebase-remote-config.js","firestore.memory":"https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.memory.js"}}
+[info] ✔  Wrote build/index.html 
+[info] 
+[info] i  Detected a .git folder at /home/qbuser/midhun/React/react-music-player 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=246607941&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-05-14T08:44:35.066Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"eaa652cbf057465b858e","redirect_uri":"http://localhost:9005","state":"246607941"}
+[debug] [2021-05-14T08:44:35.598Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Fri, 14 May 2021 08:44:35 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, Accept-Encoding, Accept, X-Requested-With","permissions-policy":"interest-cohort=()","etag":"W/\"0b1d38709fd76dac39e070f31f7ae320\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker-3f088aa2.js gist.github.com/socket-worker-3f088aa2.js","x-github-request-id":"138D:4174:6334C:6A238:609E3873"}
+[debug] [2021-05-14T08:44:35.603Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2021-05-14T08:44:36.115Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2021-05-14T08:44:36.116Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"BMidhun","id":25876842,"node_id":"MDQ6VXNlcjI1ODc2ODQy","avatar_url":"https://avatars.githubusercontent.com/u/25876842?v=4","gravatar_id":"","url":"https://api.github.com/users/BMidhun","html_url":"https://github.com/BMidhun","followers_url":"https://api.github.com/users/BMidhun/followers","following_url":"https://api.github.com/users/BMidhun/following{/other_user}","gists_url":"https://api.github.com/users/BMidhun/gists{/gist_id}","starred_url":"https://api.github.com/users/BMidhun/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/BMidhun/subscriptions","organizations_url":"https://api.github.com/users/BMidhun/orgs","repos_url":"https://api.github.com/users/BMidhun/repos","events_url":"https://api.github.com/users/BMidhun/events{/privacy}","received_events_url":"https://api.github.com/users/BMidhun/received_events","type":"User","site_admin":false,"name":"b_midhun","company":null,"blog":"","location":"Muvattupuzha, Kerala, India","email":"midhunbabygeorge@gmail.com","hireable":null,"bio":"Full Stack Developer","twitter_username":null,"public_repos":21,"public_gists":0,"followers":0,"following":1,"created_at":"2017-02-19T07:34:23Z","updated_at":"2021-05-14T08:44:31Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":84059,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] ✔  Success! Logged into GitHub as BMidhun 
+[info] 

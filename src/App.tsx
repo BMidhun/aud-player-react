@@ -33,10 +33,6 @@ function App() {
     setShouldShuffle((prev) => !prev);
   };
 
-  useEffect(() => {
-    
-    console.log("shouldShuffle:",shouldShuffle)
-  }, [shouldShuffle])
 
   const changePlayList = (filesList: FileList | null) => {
     if (playlist?.length && filesList?.length) {

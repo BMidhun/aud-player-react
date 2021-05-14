@@ -121,7 +121,6 @@ function Player({ currentTrack, hasNext, hasPrev, onNext, onPrevious , shouldRep
 
     return () => {
       if (player && progress && currentTrack) {
-        console.log("Reached");
         setCurrentProgress("");
         setIsPlaying(false);
 

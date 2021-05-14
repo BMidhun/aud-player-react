@@ -6,7 +6,6 @@ const readMetaData = async (currentTrack) => {
     let metadata = await mm.parseBuffer(bufferedData, {
       mimeType: currentTrack.type,
     });
-    console.log(metadata)
     if (metadata.common?.picture)
       metadata.common?.picture?.[0].data.toString('base64');
     const res = {

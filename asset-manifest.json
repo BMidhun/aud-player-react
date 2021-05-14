@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/aud-player-react/static/css/main.3fb31e5d.chunk.css",
-    "main.js": "/aud-player-react/static/js/main.847c3825.chunk.js",
-    "main.js.map": "/aud-player-react/static/js/main.847c3825.chunk.js.map",
+    "main.css": "/aud-player-react/static/css/main.8f4585c6.chunk.css",
+    "main.js": "/aud-player-react/static/js/main.8f263d85.chunk.js",
+    "main.js.map": "/aud-player-react/static/js/main.8f263d85.chunk.js.map",
     "runtime-main.js": "/aud-player-react/static/js/runtime-main.10e65a50.js",
     "runtime-main.js.map": "/aud-player-react/static/js/runtime-main.10e65a50.js.map",
     "static/js/2.53386413.chunk.js": "/aud-player-react/static/js/2.53386413.chunk.js",
     "static/js/2.53386413.chunk.js.map": "/aud-player-react/static/js/2.53386413.chunk.js.map",
     "index.html": "/aud-player-react/index.html",
-    "static/css/main.3fb31e5d.chunk.css.map": "/aud-player-react/static/css/main.3fb31e5d.chunk.css.map",
+    "static/css/main.8f4585c6.chunk.css.map": "/aud-player-react/static/css/main.8f4585c6.chunk.css.map",
     "static/js/2.53386413.chunk.js.LICENSE.txt": "/aud-player-react/static/js/2.53386413.chunk.js.LICENSE.txt",
     "static/media/audio-icon.e4029d57.png": "/aud-player-react/static/media/audio-icon.e4029d57.png"
   },
   "entrypoints": [
     "static/js/runtime-main.10e65a50.js",
     "static/js/2.53386413.chunk.js",
-    "static/css/main.3fb31e5d.chunk.css",
-    "static/js/main.847c3825.chunk.js"
+    "static/css/main.8f4585c6.chunk.css",
+    "static/js/main.8f263d85.chunk.js"
   ]
 }

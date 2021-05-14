@@ -1,3 +1,4 @@
+import { IPicture } from "music-metadata/lib/type";
 import { useEffect, useState } from "react";
 import computeDuration from "../../helper/computeDuration";
 import readMetaData from "../../helper/readMeta";
@@ -13,9 +14,11 @@ type Props = {
 type TrackType = {
     albumTitle: string | undefined;
     artistName: string | undefined;
-    imageSrc: any;
+    imageSrc: IPicture | undefined;
     duration: number ;
   };
+
+
 
 function Track({ trackData, index,selectTrackFromPlaylist }: Props) {
   const [parseData, setParsedData] = useState<TrackType | undefined>(undefined);
